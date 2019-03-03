@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--sys-->
+    <LinearLayout
+        android:id="@+id/sys_volumeLayout"
+        android:layout_width="600dip"
+        android:layout_height="60dip"
+        android:gravity="center"
+        >
+
+        <!-- <ImageView
+            android:layout_width="80dip"
+            android:layout_height="70dip"
+            android:background="@drawable/volume_up_down" /> -->
+
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="@string/sys_vol"
+            android:textSize="20sp"
+
+            android:layout_marginLeft="10dip"
+            />
+
+        <SeekBar
+            android:id="@+id/sys_myView_ProgressBar"
+            android:layout_width="410dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:maxHeight="4px"
+            android:minHeight="4px"
+            android:progressDrawable="@drawable/po_seekbar"
+            android:thumb="@drawable/huakuai" />
+
+
+    </LinearLayout>
+    <!--mic-->
+    <LinearLayout
+        android:id="@+id/mic_volumeLayout"
+        android:layout_width="600dip"
+        android:layout_height="60dip"
+        android:gravity="center"
+        >
+
+        <!-- <ImageView
+            android:layout_width="80dip"
+            android:layout_height="70dip"
+            android:background="@drawable/volume_up_down" /> -->
+
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="@string/mic_vol"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dip"
+            />
+
+        <SeekBar
+            android:id="@+id/mic_myView_ProgressBar"
+            android:layout_width="410dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:maxHeight="4px"
+            android:minHeight="4px"
+            android:progressDrawable="@drawable/po_seekbar"
+            android:thumb="@drawable/huakuai" />
+
+
+    </LinearLayout>
+
+    <!--混响-->
+    <LinearLayout
+        android:id="@+id/hunxiang_volumeLayout"
+        android:layout_width="600dip"
+        android:layout_height="60dip"
+
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="@string/hunxiang_vol"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dip"
+            />
+
+        <SeekBar
+            android:id="@+id/hunxiang_myView_ProgressBar"
+            android:layout_width="410dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:maxHeight="4px"
+            android:minHeight="4px"
+            android:progressDrawable="@drawable/po_seekbar"
+            android:thumb="@drawable/huakuai" />
+
+
+    </LinearLayout>
+    <!--高音-->
+    <LinearLayout
+       android:id="@+id/gaoyin_volumeLayout"
+       android:layout_width="600dip"
+       android:layout_height="60dip"
+
+       android:gravity="center"
+       >
+
+       <TextView
+           android:layout_width="100dip"
+           android:layout_height="wrap_content"
+           android:text="高音"
+           android:textSize="20sp"
+           android:layout_marginLeft="10dip"
+           />
+       <SeekBar
+           android:id="@+id/gaoyin_myView_ProgressBar"
+           android:layout_width="410dip"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dip"
+           android:maxHeight="4px"
+           android:minHeight="4px"
+           android:progressDrawable="@drawable/po_seekbar"
+           android:thumb="@drawable/huakuai" />
+
+
+   </LinearLayout>
+    <!--低音-->
+    <LinearLayout
+       android:id="@+id/diyin_volumeLayout"
+       android:layout_width="600dip"
+       android:layout_height="60dip"
+
+       android:gravity="center" >
+
+       <TextView
+           android:layout_width="100dip"
+           android:layout_height="wrap_content"
+           android:text="低音    "
+           android:textSize="20sp"
+           android:layout_marginLeft="10dip"
+           />
+       <SeekBar
+           android:id="@+id/diyin_myView_ProgressBar"
+           android:layout_width="410dip"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dip"
+           android:maxHeight="4px"
+           android:minHeight="4px"
+           android:progressDrawable="@drawable/po_seekbar"
+           android:thumb="@drawable/huakuai" />
+
+
+   </LinearLayout>
+    <!--延迟音-->
+    <LinearLayout
+        android:id="@+id/yanchi_volumeLayout"
+        android:layout_width="600dip"
+        android:layout_height="60dip"
+
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="延迟  "
+            android:textSize="20sp"
+            android:layout_marginLeft="10dip"
+            />
+        <SeekBar
+            android:id="@+id/yanchi_myView_ProgressBar"
+            android:layout_width="410dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:maxHeight="4px"
+            android:minHeight="4px"
+            android:progressDrawable="@drawable/po_seekbar"
+            android:thumb="@drawable/huakuai" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

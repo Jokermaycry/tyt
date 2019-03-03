@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/wangweiming/Desktop/调音台一期1/app/build/intermediates/res/merged/debug/drawable-hdpi/sound_bg.png",
+        "source": "/Users/wangweiming/Desktop/调音台一期1/app/src/main/res/drawable-hdpi/sound_bg.png"
+    },
+    {
+        "merged": "/Users/wangweiming/Desktop/调音台一期1/app/build/intermediates/res/merged/debug/drawable-hdpi/huakuai.png",
+        "source": "/Users/wangweiming/Desktop/调音台一期1/app/src/main/res/drawable-hdpi/huakuai.png"
+    },
+    {
+        "merged": "/Users/wangweiming/Desktop/调音台一期1/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_launcher.png",
+        "source": "/Users/wangweiming/Desktop/调音台一期1/app/src/main/res/drawable-hdpi/ic_launcher.png"
+    }
+]

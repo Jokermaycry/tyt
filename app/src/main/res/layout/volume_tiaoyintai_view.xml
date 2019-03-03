@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+     <!-- 调音台功能界面 -->
+     <LinearLayout 
+          android:id="@+id/tiaoyintaiLayout"
+            android:layout_width="@dimen/soundconsole_width"
+            android:layout_height="@dimen/soundconsole_height"
+            android:background="@drawable/sound_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+         >
+         
+
+         <!--模式-->
+         <LinearLayout
+             android:id="@+id/tiaoyintaiBtnLayout"
+             android:layout_width="@dimen/sound_btnlayout_width"
+             android:layout_height="@dimen/sound_btnlayout_height"
+             android:background="@drawable/savelayout_focus_shape"
+             android:gravity="center"
+
+             >
+
+             <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:gravity="center">
+                 <android.support.v7.widget.AppCompatImageView
+                     android:id="@+id/firstIcon"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:src="@mipmap/yinxiao"/>
+
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content">
+
+                     <android.support.v7.widget.AppCompatImageView
+                         android:id="@+id/secondIcon"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@mipmap/yinxiao"
+                         android:visibility="gone"/>
+
+                     <TextView
+                         android:id="@+id/soundTitle"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="模式"
+                         android:textSize="12dp" />
+                 </LinearLayout>
+
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:orientation="horizontal"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content">
+                 <Button
+                     android:id="@+id/effectKtvBtn"
+                     android:layout_width="@dimen/effect_btn_width"
+                     android:layout_height="@dimen/effect_btn_height"
+                     android:text="@string/effect_ktv"
+                     android:textSize="@dimen/effect_btn_text_size"
+                     android:gravity="center"
+                     android:background="@drawable/savebtn_focus_shape_1"
+                     android:layout_marginLeft="@dimen/effect_title_margin_left"
+                     />
+             </LinearLayout>
+             <LinearLayout
+                 android:orientation="horizontal"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content">
+                 <Button
+                     android:id="@+id/effectStudioBtn"
+                     android:layout_width="@dimen/effect_btn_width"
+                     android:layout_height="@dimen/effect_btn_height"
+                     android:text="@string/effect_studio"
+                     android:textSize="@dimen/effect_btn_text_size"
+                     android:background="@drawable/savebtn_focus_shape_1"
+                     android:gravity="center"
+                     android:layout_marginLeft="@dimen/effect_btn_margin_left"
+                     />
+             </LinearLayout>
+             <LinearLayout
+                 android:orientation="horizontal"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content">
+                 <Button
+                     android:id="@+id/effectYanchanghuiBtn"
+                     android:layout_width="@dimen/effect_btn_width"
+                     android:layout_height="@dimen/effect_btn_height"
+                     android:text="@string/effect_yanchanghui"
+                     android:textSize="@dimen/effect_btn_text_size"
+                     android:background="@drawable/savebtn_focus_shape_1"
+                     android:gravity="center"
+                     android:layout_marginLeft="@dimen/effect_btn_margin_left"
+                     />
+             </LinearLayout>
+             <LinearLayout
+                 android:orientation="horizontal"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content">
+                 <Button
+                     android:id="@+id/effectShanguBtn"
+                     android:layout_width="@dimen/effect_btn_width"
+                     android:layout_height="@dimen/effect_btn_height"
+                     android:text="@string/effect_shangu"
+                     android:textSize="@dimen/effect_btn_text_size"
+                     android:background="@drawable/savebtn_focus_shape_1"
+                     android:gravity="center"
+                     android:layout_marginLeft="@dimen/effect_btn_margin_left"
+                     />
+             </LinearLayout>
+             <LinearLayout
+                 android:orientation="horizontal"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content">
+                 <Button
+                     android:id="@+id/effectYuanshengBtn"
+                     android:layout_width="@dimen/effect_btn_width"
+                     android:layout_height="@dimen/effect_btn_height"
+                     android:text="@string/effect_yuansheng"
+                     android:textSize="@dimen/effect_btn_text_size"
+                     android:background="@drawable/savebtn_focus_shape_1"
+                     android:gravity="center"
+                     android:layout_marginLeft="@dimen/effect_btn_margin_left"
+                     />
+             </LinearLayout>
+
+         </LinearLayout>
+
+         <!--菜单-->
+         <LinearLayout
+             android:id="@+id/aicontrol"
+             android:layout_width="@dimen/sound_btnlayout_width"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:gravity="center"
+             >
+
+
+                 <Button
+                     android:id="@+id/first"
+                     android:layout_width="210dip"
+                     android:layout_height="wrap_content"
+                     android:text="自定义音效"
+                     android:textSize="@dimen/effect_btn_text_size"
+                     android:background="@drawable/savebtn_focus_shape_1"
+                     android:gravity="center"
+                     android:layout_marginLeft="@dimen/effect_btn_margin_left"
+                     />
+
+
+
+                 <Button
+                     android:id="@+id/second"
+                     android:layout_width="210dip"
+                     android:layout_height="wrap_content"
+                     android:text="设备适配"
+                     android:textSize="@dimen/effect_btn_text_size"
+                     android:background="@drawable/savebtn_focus_shape_1"
+                     android:gravity="center"
+                     android:layout_marginLeft="@dimen/effect_btn_margin_left"
+                     />
+
+                 <Button
+                     android:id="@+id/saveModelBtn"
+                     android:layout_width="210dip"
+                     android:layout_height="wrap_content"
+                     android:text="默认音效"
+                     android:textSize="@dimen/effect_btn_text_size"
+                     android:background="@drawable/savebtn_focus_shape_1"
+                     android:gravity="center"
+                     android:layout_marginLeft="@dimen/effect_btn_margin_left"
+                     />
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:gravity="center"
+             android:orientation="vertical"
+             android:layout_width="630dip"
+             android:layout_height="wrap_content">
+             <com.clkj.micglmusicmixer.ControlScrollViewPager
+                 android:id="@+id/viewpager"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+             </com.clkj.micglmusicmixer.ControlScrollViewPager>
+         </LinearLayout>
+
+
+
+
+
+     </LinearLayout> 
+
+</LinearLayout>

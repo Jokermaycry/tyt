@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SoundConsole</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="sound_console">Sound console</string>
+    <string name="mic_vol">Mic Volume</string>
+    <string name="sys_vol">System Volume</string>
+    <string name="hunxiang_vol">Reverberation</string>
+    <string name="diyin_vol">Bass</string>
+    <string name="gaoyin_vol">Treble</string>
+    <string name="def_vol">Default</string>
+    <string name="effect_ktv">KTV</string>
+    <string name="effect_studio">录音棚</string>
+    <string name="effect_nan">male voice</string>
+    <string name="effect_nv">female voice</string>
+    <string name="effect_juchang">baby</string>
+    <string name="effect_jiuba">酒吧</string>
+    <string name="effect_yanchanghui">演唱会</string>
+    <string name="effect_shangu">山谷</string>
+    <string name="effect_yuansheng">原声</string>
+
+    <string name="effect_dianyin">electronic</string>
+    <string name="effect_biansheng">whine</string>
+    
+   
+    <string name="updateing"> Updating, please do not power off, please wait...</string>
+    <string name="updateing_reboot"> Mixer update, the system is about to restart ...</string>
+    <string name="update_failed"> Update failed, the system may not install enough memory, the system will not restart</string>
+    <string name="update_check"> Check the sound console is updated, whether to update now ?</string>
+     <string name="update_title">system tip</string>
+     <string name="update_now">update now</string>
+     <string name="update_later">update later</string>
+     
+     <string name="no_usbdevice">No device detected</string>
+    
+
+</resources>

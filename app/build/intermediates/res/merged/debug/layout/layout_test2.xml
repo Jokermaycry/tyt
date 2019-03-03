@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:paddingRight="50dp"
+        android:text="惠威音响"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Spinner
+
+        android:id="@+id/spiner_first"
+        android:entries="@array/Data_first"
+        android:text="惠威音响"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Switch
+        android:paddingLeft="50dp"
+        android:id="@+id/first_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="山水音响"
+            android:textSize="20dp"
+            android:paddingRight="50dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Spinner
+
+            android:id="@+id/spiner_second"
+            android:entries="@array/Data_second"
+            android:text="山水音响"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Switch
+            android:paddingLeft="50dp"
+            android:id="@+id/second_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="漫步者  "
+            android:textSize="20dp"
+            android:paddingRight="50dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Spinner
+
+            android:id="@+id/spiner_third"
+            android:entries="@array/Data_third"
+            android:text="漫步者"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Switch
+            android:paddingLeft="50dp"
+            android:id="@+id/third_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+
+    <dimen name="effect_btn_text_size">17sp</dimen>
+    <dimen name="effect_btn_text_size1">27sp</dimen>
+    <dimen name="title_size">25sp</dimen>
+    <dimen name="other_title_size">20sp</dimen>
+
+
+    <dimen name="soundconsole_width">630dp</dimen>
+    <dimen name="soundconsole_height">540dp</dimen>
+
+    <dimen name="sound_title_height">60dp</dimen>
+
+
+
+    <dimen name="effect_btn_width">80dp</dimen>
+    <dimen name="effect_btn_height">41dp</dimen>
+
+    <dimen name="seek_layout_width">630dp</dimen>
+    <dimen name="seek_layout_height">70dp</dimen>
+
+    <dimen name="seekbar_width">450dp</dimen>
+    <dimen name="seekbar_height">10dp</dimen>
+
+
+    <dimen name="effect_title_margin_left">30dp</dimen>
+    <dimen name="effect_btn_margin_left">10dp</dimen>
+    <dimen name="effect_btn_margin_left1">70dp</dimen>
+    <dimen name="sound_btnlayout_width">630dip</dimen>
+    <dimen name="sound_btnlayout_height">90dip</dimen>
+
+    <dimen name="switch_margin_left">5dip</dimen>
+</resources>

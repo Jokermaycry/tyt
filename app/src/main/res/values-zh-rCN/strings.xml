@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	
+ <string name="app_name">调音台</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="sound_console">调音台</string>
+    <string name="mic_vol">麦克风</string>
+    <string name="sys_vol">系统音量</string>
+    <string name="hunxiang_vol">混响</string>
+    <string name="diyin_vol">低音</string>
+    <string name="gaoyin_vol">高音</string>
+    <string name="def_vol">默认</string>
+
+    
+    <string name="updateing"> 更新安装中，请不要断电，请稍候...</string>
+    <string name="updateing_reboot"> 调音台更新中，系统即将重启...</string>
+    <string name="update_failed"> 更新失败，可能系统安装内存不够，系统将不会重启</string>
+    <string name="update_check"> 检测到系统调音台有更新，是否现在更新?</string>
+     <string name="update_title">系统提示</string>
+     <string name="update_now">立即更新</string>
+     <string name="update_later">下次更新</string>
+     
+     <string name="no_usbdevice">未检测到设备</string>
+    
+</resources>

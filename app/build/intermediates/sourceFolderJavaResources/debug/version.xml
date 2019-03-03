@@ -1,0 +1,10 @@
+<update>
+	<version>10</version>
+	<name>ukm_micglmusic_mixer_ui.apk</name>
+	<!-- 检测是否要更新url -->
+	<check_url>http://112.124.43.99/apk/shengba/ukm_MicGlmusicMixer_ver.txt</check_url>
+	<!-- 下载地址 -->
+	<download_url>http://112.124.43.99/apk/shengba/ukm_MicGlmusicMixer.apk</download_url>
+
+
+</update>

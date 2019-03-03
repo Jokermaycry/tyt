@@ -1,0 +1,25 @@
+<clkj_mic_sound_cfg>
+	<cfg_version>1.01</cfg_version>
+	<cfg_name>clkj_mic_sound_cfg</cfg_name>
+	
+	<!-- 麦克风默认音量值-->
+	<default_mic_vol>15</default_mic_vol>
+	<!-- 麦克风最大音量值 -->
+	<max_mic_vol>15</max_mic_vol>
+	
+	<!-- 混响默认音量值-->
+	<default_echo_vol>8</default_echo_vol>
+	<!-- 混响最大音量值 -->
+	<max_echo_vol>15</max_echo_vol>
+	
+	<!-- 键值测试说明：输入命令 adb shell getevent，回车，用遥控器按键对着红外按，可以看到有按键信息出来，如按返回键，中间的字符串是 009e，则取 9e填入相应的键值对中 -->
+	<!-- 调用调音台的键值 -->
+	<display_sound_console>44</display_sound_console>
+	<!-- 隐藏调音台的键值 -->
+	<hide_sound_console>9e</hide_sound_console>
+	
+	
+	
+	
+
+</clkj_mic_sound_cfg>

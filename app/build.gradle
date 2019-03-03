@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.clkj.micglmusicmixer"
+        minSdkVersion 16
+        targetSdkVersion 25
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    signingConfigs {
+        release {
+            storeFile file("../Signature/cl_key.jks")
+            storePassword 'cl123456'
+            keyAlias 'cl'
+            keyPassword 'cl123456'
+        }
+
+        debug {
+            storeFile file("../signature/cl_key.jks")
+            storePassword 'cl123456'
+            keyAlias 'cl'
+            keyPassword 'cl123456'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:support-v4:25.4.0'
+}

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.clkj.micglmusicmixer"
+    android:versionCode="12"
+    android:versionName="1.12" 
+    
+    >
+<!-- android:sharedUserId="android.uid.system"  -->
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoDisplay"
+         >
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+                
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+            
+        </activity>
+        
+        
+          <service android:name="com.clkj.micglmusicmixer.MainService" >
+        </service>
+         <service android:name="com.clkj.micglmusicmixer.BootService" >
+        </service>
+        
+        
+        <service android:name="com.clkj.micglmusicmixer.VolumeService" >
+        </service>
+        
+
+        <receiver android:name="com.clkj.micglmusicmixer.BootAndVolumeReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.rkm.action.LUYIN_OPENMIC_ACTION" />
+                <action android:name="com.rkm.action.LUYIN_CLOSE_ACTION" >
+                </action>
+                <action android:name="com.rkm.action.FACTORY_TESTOPENMIC_ACTION" >
+                </action>
+                <action android:name="com.clkj.action.OPEN_BLUETOOTH_ACTION" />
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_CHANGED" />
+                <action android:name="com.rkm.action.QIDONG_DIALOG_ACTION" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" >
+                    
+                </action>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/>
+                
+                <action android:name="android.media.VOLUME_CHANGED_ACTION"/>
+                
+                <action android:name="com.android.example.USB_PERMISSION"
+                    />
+                <action android:name="com.clkj.action.OPEN_GLMUSICMIXER_ACTION"/>
+            </intent-filter>
+        </receiver>
+
+    
+        <!-- 检测网络状态动作 -->
+        <receiver android:name="com.clkj.micglmusicmixer.update.CheckNetReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.clkj.micglmusicmixer.activity.UpdateActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+    </application>
+
+    <uses-feature android:name="android.hardware.usb.host" />
+
+</manifest>

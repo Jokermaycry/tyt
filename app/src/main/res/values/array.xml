@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Data_first">
+        <item>kb01</item>
+        <item>kb02</item>
+    </string-array>
+    <string-array name="Data_second">
+        <item>Xxd0</item>
+        <item>Xxd1</item>
+    </string-array>
+    <string-array name="Data_third">
+        <item>Bbb01</item>
+        <item>Bbb02</item>
+    </string-array>
+
+
+</resources>
